@@ -7,7 +7,6 @@ import (
 	"regexp"
 )
 
-const PACKAGE_MANAGER_BREW = "brew"
 
 //BrewGetInstalledBrewPackages Calls brew to get installed packages and their versions
 func BrewGetInstalledPackages() ([]PackageInstallation, error){
