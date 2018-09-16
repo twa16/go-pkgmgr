@@ -1,5 +1,10 @@
 package pkgmgr
 
+type PackageManager interface {
+	GetInstalledPackages() ([]PackageInstallation, error)
+	GetPackageUpdates()    ([]PackageUpdate, error)
+}
+
 //PackageInstallation Represents an installed package
 type PackageInstallation struct {
 	PackageName    string //Name of the package
